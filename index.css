@@ -42,10 +42,8 @@ h1{
     "desktop weather news news none music video"
     ;
 }
-
-@media only screen and (max-width:520px) {
+@media screen and (max-width: 480px) {
     .manu{
-        grid-gap:0.5rem;
         grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
@@ -68,9 +66,10 @@ h1{
     "game"
     "camera"
     "music"
-    "video";
+    "video"
+    ;   
     }
-}
+  }
 .manu div{
     
     font-size: 0.5rem;
@@ -260,7 +259,7 @@ i{
     width: 100%;height: 100%;
 }
 .desktop-back{
-    background-image: url(https://cdn.pixabay.com/photo/2021/11/13/23/06/tree-6792528_960_720.jpg);
+    background-image: url(https://media.istockphoto.com/photos/beautiful-sunrise-over-the-sea-picture-id610041376?k=20&m=610041376&s=612x612&w=0&h=JoEPWYoq1-FN5ANIQHNNdI2XrRDYnPCUWuLOHMrgLnE=);
     border-image-repeat: no-repeat;
     width: 100%;height: 100%;
 }
@@ -307,7 +306,7 @@ i{
     width: 100%;height: 100%;
 }
 .bing-back{
-    background-image: url(https://cdn.pixabay.com/photo/2020/05/29/22/00/field-5236879_960_720.jpg);
+    background-image: url(https://media.istockphoto.com/photos/iceberg-with-its-visible-and-underwater-or-submerged-parts-floating-picture-id1264160353?s=612x612);
     border-image-repeat: no-repeat;
     width: 100%;height: 100%;
 }
