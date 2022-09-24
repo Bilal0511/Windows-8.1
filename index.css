@@ -1,0 +1,433 @@
+*{
+    margin: 0%;padding: 0%;
+}
+body{
+    background-color: #30097e;
+    transition: 1s;
+}
+.main_container{
+    width: 100%;height: 100vh;
+    
+    color: white;
+}
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar div i{
+    margin-right: 10px;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-left: 50px;
+}
+.user{
+    align-self: center;
+}
+.manu{
+    margin-left: 50px;margin-right: 90px;margin-top: 40px;
+    height: 60vh;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 0.125fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "email calender internet store none bing bing"
+    "people photo map sky none trawal trawal"
+    "messag finance sports sports none game camera"
+    "desktop weather news news none music video"
+    ;
+}
+
+@media only screen and (max-width:520px) {
+    .manu{
+        grid-gap:0.5rem;
+        grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "email"
+    "calender"
+    "internet"
+    "store"
+    "people"
+    "photo"
+    "map"
+    "sky"
+    "messag"
+    "finance"
+    "sports"
+    "desktop"
+    "weather"
+    "news"
+    "bing"
+    "trawal"
+    "game"
+    "camera"
+    "music"
+    "video";
+    }
+}
+.manu div{
+    
+    font-size: 0.5rem;
+    font-family: sans-serif;
+    transition: all 1s;
+}
+i{
+    margin-left: 20px;
+}
+.manu div {
+    transition: width 1s all;
+  }
+.email{
+    background-color:transparent ;
+    grid-area: email;
+}
+.email-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.email-frant,.email-back{
+    background-color:#51bfd3;
+}
+.email-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.calender{
+    background-color: transparent;
+    grid-area: calender;
+}
+.calender-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.calender-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.calender-frant,.calender-back{
+    background-color: #6e2cd1
+}
+.internet{
+    background-color: transparent;
+    grid-area: internet;
+}
+.internet-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.internet-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.internet-frant,.internet-back{
+    background-color: #69a9e6;
+}
+
+.store{
+    background-color: transparent;
+    grid-area: store;
+}
+.store-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.store-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.store-frant,.store-back{
+    background-color:#4a8f35 ;
+}
+.people{
+    background-color: transparent;
+    grid-area: people;
+}
+.people-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.people-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.people-frant,.people-back{
+    background: #a75120;
+}
+.photo{
+    background-color: transparent;
+    grid-area: photo;
+}
+.photo-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.photo-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.photo-frant,.photo-back{
+    background: #51bfd3;
+}
+.maps{
+    background-color: transparent;
+    grid-area: map;
+}
+.map-frant,.map-back{
+    background-color: #692f99;
+}
+.map-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.map-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.sky{
+    background-color: transparent;
+    grid-area: sky;
+}
+.sky-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.sky-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.sky-frant,.sky-back{
+    background-color: #465dc7;
+}
+.messag{
+    background-color: transparent;
+    grid-area: messag;
+}
+.messag-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.messag-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.messag-frant,.messag-back{
+    background-color: #692f99;
+}
+
+.finance{
+    background-color: transparent;
+    grid-area: finance;
+}
+.finance-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.finance-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.finance-frant,.finance-back{
+    background-color: #4a8f35;
+}
+.sports{
+    background-color: transparent;
+    grid-area: sports;
+}
+.sports-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.sports-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.sports-frant,.sports-back{
+    background-color: #6e2cd1;
+}
+.desktop{
+    background-color: transparent;
+    grid-area: desktop;
+}
+.desktop-frant{
+    background-image: url(https://cdn.pixabay.com/photo/2021/11/13/23/06/tree-6792528_960_720.jpg);
+    border-image-repeat: no-repeat;
+    width: 100%;height: 100%;
+}
+.desktop-back{
+    background-image: url(https://cdn.pixabay.com/photo/2021/11/13/23/06/tree-6792528_960_720.jpg);
+    border-image-repeat: no-repeat;
+    width: 100%;height: 100%;
+}
+.desktop-inner{
+    height: 100%;width: 100%;
+}
+.weather{
+    background-color: transparent;
+    grid-area: weather;
+}
+.weather-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.weather-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.weather-frant,.weather-back{
+    background-color: #69a9e6;
+}
+.news{
+    background-color: transparent;
+    grid-area: news;
+}
+.news-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.news-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.news-frant,.news-back{
+    background-color: #741919;
+}
+.bing{
+    background-color: transparent;
+    grid-area: bing;
+}
+.bing-frant{
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/29/22/00/field-5236879_960_720.jpg);
+    border-image-repeat: no-repeat;
+    width: 100%;height: 100%;
+}
+.bing-back{
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/29/22/00/field-5236879_960_720.jpg);
+    border-image-repeat: no-repeat;
+    width: 100%;height: 100%;
+}
+.bing-inner{
+    width: 100%;height: 100%;
+}
+.trawal{
+    background-color: transparent;
+    grid-area: trawal;
+}
+.trawal-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.trawal-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.trawal-frant,.trawal-back{
+    background-color: #51bfd3;
+}
+
+.game{
+    background-color: transparent;
+    grid-area: game;
+}
+.game-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.game-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.game-frant,.game-back{
+    background-color: #4a8f35;
+}
+.camera{
+    background-color: transparent;
+    grid-area: camera;
+}
+.camera-frant,.camera-back{
+    background-color: #692f99;
+}
+.camera-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.camera-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.music{
+    background-color: transparent;
+    grid-area: music;
+}
+.music-frant,.music-back{
+    background-color: #a75120;
+}
+.music-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.music-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+.video{
+    background-color: transparent;
+    grid-area: video;
+}
+.video-frant span{
+    margin-top: 12px;
+    font-size: 50px;
+}
+.video-back h3{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+h3{
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+span{
+    height: 100%;
+    width: 100%;
+}
+.video-frant,.video-back{
+    background-color: #741919;
+}
+.email, .calender, .internet, .store,.people,.photo,.maps,.sky,.messag,.finance,.sports,.desktop,.weather,.news,.bing,.trawal,.game,.camera,.music,.video{
+    perspective: 1000px;
+}
+.email-inner,.calender-inner,.internet-inner,.store-inner,.people-inner,.photo-inner,.map-inner,.sky-inner,.messag-inner,.finance-inner,.sports-inner,.desktop-inner,.weather-inner,.news-inner,.bing-inner,.trawal-inner,.game-inner,.camera-inner,.music-inner,.video-inner{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.email:hover .email-inner, .calender:hover .calender-inner, .internet:hover .internet-inner, .store:hover .store-inner,.people:hover .people-inner,.photo:hover .photo-inner,.maps:hover .map-inner,.sky:hover .sky-inner,.messag:hover .messag-inner,.finance:hover .finance-inner,.sports:hover .sports-inner,.desktop:hover .desktop-inner,.weather:hover .weather-inner,.news:hover .news-inner,.bing:hover .bing-inner,.trawal:hover .trawal-inner,.game:hover .game-inner,.camera:hover .camera-inner,.music:hover .music-inner,.video:hover .video-inner{
+    transform: rotateY(180deg);
+    transition: 0.6s ;
+}
+.email-frant, .calender-frant, .internet-frant, .store-frant,.people-frant,.photo-frant,.map-frant,.sky-frant,.messag-frant,.finance-frant,.sports-frant,.desktop-frant,.weather-frant,.news-frant,.bing-frant,.trawal-frant,.game-frant,.camera-frant,.music-frant,.video-frant,
+.email-back, .calender-back, .internet-back, .store-back,.people-back,.photo-back,.map-back,.sky-back,.messag-back,.finance-back,.sports-back,.desktop-back,.weather-back,.news-back,.bing-back,.trawal-back,.game-back,.camera-back,.music-back,.video-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+}
+.email-frant,.calender-frant , .internet-frant, .store-frant,.people-frant,.photo-frant,.map-frant,.sky-frant,.messag-frant,.finance-frant,.sports-frant,.desktop-frant,.weather-frant,.news-frant,.bing-frant,.trawal-frant,.game-frant,.camera-frant,.music-frant,.video-frant{
+    
+    color: white;
+}
+
+.email-back, .calender-back, .internet-back, .store-back,.people-back,.photo-back,.map-back,.sky-back,.messag-back,.finance-back,.sports-back,.desktop-back,.weather-back,.news-back,.bing-back,.trawal-back,.game-back,.camera-back,.music-back,.video-back{
+    color: black;
+    transform: rotateY(180deg);
+} 
